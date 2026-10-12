@@ -1,0 +1,21 @@
+# Planned workload categories
+
+workloads:
+  - name: block_io
+    storage_interface: rbd
+    patterns:
+      - random_read
+      - random_write
+      - mixed_io
+
+  - name: file_io
+    storage_interface: cephfs
+    patterns:
+      - sequential_read
+      - sequential_write
+
+  - name: object_io
+    storage_interface: rgw
+    patterns:
+      - object_read
+      - object_write
