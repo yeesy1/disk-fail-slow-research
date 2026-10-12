@@ -1,0 +1,20 @@
+# Planned experimental cluster
+
+cluster:
+  name: fail-slow-testbed
+  storage_system: ceph
+
+  nodes:
+    - name: node1
+      role: storage
+      physical_nvme_required: true
+
+    - name: node2
+      role: storage
+      physical_nvme_required: true
+
+    - name: node3
+      role: storage
+      physical_nvme_required: true
+
+  root_access_required: true
